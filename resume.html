@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinthaka Hasakelum - Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chinthaka Hasakelum - Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,16 +41,15 @@
             font-size: 2.5rem;
             letter-spacing: 1px;
         }
-        header nav {
-            margin-top: 10px;
+        header p {
+            margin: 5px 0;
         }
-        header nav a {
+        header a {
             color: #f5f5f5;
             text-decoration: none;
             border-bottom: 1px solid #f5f5f5;
-            margin: 0 10px;
         }
-        header nav a:hover {
+        header a:hover {
             color: #ddd;
             border-bottom: 1px solid #ddd;
         }
@@ -92,13 +91,25 @@
                 opacity: 1;
             }
         }
+        .section-title {
+            margin-top: 1.5rem;
+        }
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
         p {
-            line-height: 1.8;
+            line-height: 1.6;
             color: #444;
         }
         p:hover {
             background: #f0f0f0;
             transition: background 0.3s ease;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            line-height: 1.6;
+            color: #444;
         }
         footer {
             text-align: center;
@@ -115,48 +126,150 @@
         footer p:hover {
             color: #ddd;
         }
-        /* Certification Icons styling */
-        .cert-icons {
-            margin-top: 1rem;
+        /* Resume-specific styling */
+        .resume-header {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
         }
-        .cert-icons img {
-            height: 40px;
-            margin: 0 5px;
-            vertical-align: middle;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        .resume-header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        .resume-header .contact {
+            font-size: 1rem;
+            color: #666;
+        }
+        .resume-section {
+            margin-bottom: 1.5rem;
+        }
+        .resume-section h2 {
+            margin-top: 0;
+        }
+        .resume-item {
+            margin-bottom: 1rem;
+        }
+        .resume-item h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .resume-item p {
+            margin: 0.2rem 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Chinthaka Hasakelum</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="mailto:hasakelum@gmail.com">Email</a>
-            <a href="https://linkedin.com/in/hasakelum" target="_blank">LinkedIn</a>
-            <a href="resume.html">Resume</a>
-        </nav>
+        <h1>Chinthaka Hasakelum - Resume</h1>
+        <p><a href="index.html">Back to Portfolio</a></p>
     </header>
     <main class="container">
-        <section class="summary">
-            <h2>Summary</h2>
-            <p>
-                Dynamic and seasoned DevOps and SRE specialist with over 8 years of experience in open-source
-                and cloud-native technologies. Expertise includes end-to-end migration of monolithic applications
-                to microservices, containerization, and Kubernetes, with proficiency in AWS, Azure, and Google Cloud.
-                Skilled in Infrastructure as Code (IaC) using Terraform, CloudFormation, and Ansible, along with strong
-                coding and scripting abilities in Python and Bash. Proven track record in automating CI/CD pipelines,
-                monitoring strategies, and optimizing infrastructure for scalability and security. Recognized for
-                strong communication, leadership, and ability to provide hands-on training in DevOps/SRE practices.
-            </p>
-            <div class="cert-icons">
-                <strong>Certifications:</strong>
-                <img src="images/cka.png" alt="CKA icon">
-                <img src="images/cks.png" alt="CKS icon">
-                <img src="images/az-104.png" alt="AZ-104 icon">
+        <!-- Resume Header -->
+        <section class="resume-header">
+            <h1>Chinthaka Hasakelum</h1>
+            <p class="contact">📍 Email: <a href="mailto:hasakelum@gmail.com">hasakelum@gmail.com</a> | LinkedIn: <a href="https://linkedin.com/in/hasakelum" target="_blank">linkedin.com/in/hasakelum</a></p>
+        </section>
+        <!-- Professional Summary -->
+        <section class="resume-section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>Dynamic and seasoned DevOps and SRE specialist with over 8 years of experience in open-source and cloud-native technologies. Expertise includes end-to-end migration of monolithic applications to microservices, containerization, and Kubernetes, with proficiency in AWS, Azure, and Google Cloud. Skilled in Infrastructure as Code (IaC) using Terraform, CloudFormation, and Ansible, along with strong coding and scripting abilities in Python and Bash. Proven track record in automating CI/CD pipelines, monitoring strategies, and optimizing infrastructure for scalability and security. Recognized for strong communication, leadership, and ability to provide hands-on training in DevOps/SRE practices.</p>
+        </section>
+        <!-- Skills -->
+        <section class="resume-section">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>Cloud Platforms: AWS, Azure, GCP</li>
+                <li>Containers &amp; Orchestration: Kubernetes (EKS, AKS, GKE), Docker, Helm</li>
+                <li>IaC &amp; Automation: Terraform, CloudFormation, Ansible, Puppet</li>
+                <li>DevOps Tools: GitLab CI/CD, Jenkins, GitHub Actions</li>
+                <li>Monitoring &amp; Logging: Grafana, Prometheus, Elasticsearch, Kibana, InfluxDB</li>
+                <li>Programming/Scripting: Python, Bash</li>
+                <li>Networking &amp; Load Balancing: Nginx (Plus &amp; Community), Akamai Siteshield</li>
+                <li>Databases: MongoDB, DocumentDB, RDS, Elasticsearch</li>
+                <li>Certifications: AWS CSAA, CKA, CKS, AZ-104, Azure Fundamentals, Aviatrix Certified Engineer</li>
+            </ul>
+        </section>
+        <!-- Professional Experience -->
+        <section class="resume-section">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="resume-item">
+                <h3>DevOps Engineer</h3>
+                <p>Relex Solutions, Finland (Jan 2023 – Present)</p>
+                <ul>
+                    <li>Automated Kubernetes deployments using Flux and Flagger.</li>
+                    <li>Designed and implemented Azure infrastructure automation with Terraform.</li>
+                    <li>Managed and scaled applications on Azure Kubernetes Service (AKS).</li>
+                    <li>Established end-to-end DevOps automation pipelines with GitLab CI/CD.</li>
+                </ul>
             </div>
+            <div class="resume-item">
+                <h3>Senior Site Reliability Engineer</h3>
+                <p>Pearson, Sri Lanka (June 2021 – Jan 2023)</p>
+                <ul>
+                    <li>Migrated Kubernetes-hosted projects to AWS ECS with Fargate.</li>
+                    <li>Conducted gap analyses for Kubernetes and ECS platforms to ensure seamless migration.</li>
+                    <li>Developed CloudFormation and Terraform templates for scalable IaC.</li>
+                    <li>Automated security rules with Akamai Siteshield endpoint integration.</li>
+                    <li>Built multistage Docker pipelines and implemented DevSecOps tools, including Snyk, Twistlock, and Checkmarx.</li>
+                    <li>Optimized monitoring and logging with New Relic, Atlas MongoDB, and CI/CD pipelines using GitLab.</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <h3>Systems Engineer – DevOps Managed Cloud</h3>
+                <p>WSO2, Sri Lanka (Nov 2019 – June 2021)</p>
+                <ul>
+                    <li>Created an AMI automation pipeline with CloudFormation.</li>
+                    <li>Configured and managed monitoring systems like Icinga and Nagios.</li>
+                    <li>Provisioned EKS, AKS, and GKE clusters using Terraform.</li>
+                    <li>Deployed Helm charts to automate WSO2 product deployment.</li>
+                    <li>Configured Nginx Ingress with multiple classes for AKS and GKE clusters.</li>
+                    <li>Set up comprehensive monitoring solutions with Kibana, Elasticsearch, and Grafana.</li>
+                    <li>Automated Docker image builds and deployments to GCR with GitHub Actions.</li>
+                    <li>Provided 24x5 rotational customer support.</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <h3>Cloud Platform Operations Engineer</h3>
+                <p>Pearson, Sri Lanka (Oct 2018 – Nov 2019)</p>
+                <ul>
+                    <li>Built and maintained Docker container clusters managed by Kubernetes.</li>
+                    <li>Provisioned AWS infrastructure using Terraform and automated tasks with Ansible.</li>
+                    <li>Designed Kubernetes metrics and event streams with Kafka.</li>
+                    <li>Implemented Jenkins CI/CD pipelines and monitoring solutions with Prometheus and Grafana.</li>
+                    <li>Developed Python scripts for AWS operations and automated tasks using the AWS API.</li>
+                    <li>Managed cost optimization with CloudChecker.</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <h3>Associate Engineer – Technology</h3>
+                <p>Virtusa (Pvt.) Ltd, Sri Lanka (Dec 2016 – Oct 2017)</p>
+                <ul>
+                    <li>Developed and deployed applications using Spring Boot and Spring MVC.</li>
+                    <li>Containerized Java and Node.js applications with Docker.</li>
+                    <li>Administered AWS services, including EC2, S3, and CloudWatch.</li>
+                    <li>Automated application monitoring and cost alerts with AWS tools.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Education -->
+        <section class="resume-section">
+            <h2 class="section-title">Education</h2>
+            <p><strong>Bachelor of Science in Software Engineering</strong></p>
+            <p>Curtin University, Australia</p>
+        </section>
+        <!-- Certifications -->
+        <section class="resume-section">
+            <h2 class="section-title">Certifications</h2>
+            <ul>
+                <li>AWS CSAA: AWS Solutions Architect Associate</li>
+                <li>CKA: Certified Kubernetes Administrator</li>
+                <li>CKS: Certified Kubernetes Security Specialist</li>
+                <li>AZ-104: Microsoft Certified Azure Administrator Associate</li>
+                <li>Microsoft Certified Azure Fundamentals</li>
+                <li>Aviatrix Certified Engineer – Multi-Cloud Network Associate</li>
+            </ul>
         </section>
     </main>
     <footer>
